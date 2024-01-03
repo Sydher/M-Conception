@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavbarService } from '../../services/navbar.service';
 
 @Component({
   selector: 'app-home',
@@ -10,5 +12,9 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   siteName: string = "M Conception"
+
+  constructor(private router: Router, private navbarService: NavbarService) {
+    this.navbarService.setActiveMenuItem(this.router.url);
+  }
 
 }

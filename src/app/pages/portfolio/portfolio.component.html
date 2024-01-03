@@ -1,0 +1,35 @@
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Portfolio</h1>
+            <p class="lead text-body-secondary">
+                Plongez dans l'univers captivant de {{ siteName }} à travers notre page Portfolio. Découvrez une
+                collection inspirante de projets où l'impression 3D et la conception 3D fusionnent pour créer des œuvres
+                uniques et inédites.
+            </p>
+            <p>
+                <a href="#" class="btn btn-primary my-2">Obtenez un devis</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            @for (project of projects; track project.id) {
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-body">
+                        <img [src]="project.img" class="img-fluid">
+                        <h3 class="card-title pricing-card-title">{{ project.title }}</h3>
+                        <p>
+                            {{ project.desc }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>

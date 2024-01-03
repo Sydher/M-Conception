@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavbarService } from '../../services/navbar.service';
 
 @Component({
   selector: 'app-shared-navbar',
@@ -10,5 +11,11 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
 
   siteName: string = "M Conception"
+
+  constructor(private navbarService: NavbarService) {}
+
+  isActiveRoute(route: string): boolean {
+    return route === this.navbarService.getActiveMenuItem();
+  }
 
 }

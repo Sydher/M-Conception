@@ -1,6 +1,6 @@
 # M Conception
 
-Site Web de [M Conception](#TODO)
+Site vitrine de [M Conception](#TODO)
 
 ## Documentation technique
 
@@ -21,4 +21,4 @@ Site Web de [M Conception](#TODO)
 ### Générer le code pour la mise en production
 
 - Lancer la commande suivante : `ng build`
-- Copier le contenu du dossier `dist/aaa` sur votre dépôt
+- Copier le contenu du dossier `dist/m_conception/browser` sur le serveur

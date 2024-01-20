@@ -1,0 +1,54 @@
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Contact</h1>
+            <p class="lead text-body-secondary">
+                Vous avez besoin d'un devis pour votre projet d'impression 3D ? Nous sommes là pour vous aider.
+                Contactez-nous dès maintenant pour obtenir un devis gratuit.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body">
+                    <form [formGroup]="formData">
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Sujet de la demande</label>
+                            <input type="text" class="form-control" id="subject" required formControlName="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Corps du message</label>
+                            <textarea class="form-control" id="message" rows="3" required
+                                formControlName="body"></textarea>
+                        </div>
+                        @if (formData.valid) {
+                        <a class="btn btn-primary" href="{{mailTo()}}">Envoyer</a>
+                        } @else {
+                        <button class="btn btn-primary" disabled>Envoyer</button>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="bi bi-telephone me-3"></i>
+                            <span>Téléphone : 01 23 45 67 89</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-3">
+                            <i class="bi bi-envelope me-3"></i>
+                            <span>Email : {{contactEmail}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

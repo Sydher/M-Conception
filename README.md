@@ -17,6 +17,9 @@ Site vitrine de [M Conception](#TODO)
 - Ajouter le lien dans la barre de navigation :
   - Modifier `src/app/shared/navbar/navbar.component.html`
   - Ajouter un nouveau `<li>`
+- Ajouter le chemin au routing :
+  - Modifier `src/app/app.routes.ts`
+  - Ajouter une nouvelle ligne
 
 ### Générer le code pour la mise en production
 

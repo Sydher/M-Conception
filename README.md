@@ -1,6 +1,7 @@
 # M Conception
 
-Site vitrine de [M Conception](#TODO)
+Site vitrine de [M Conception](https://m-conception.netlify.app/)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c209ccd-6bc7-4479-a4ad-53bd9f6ba031/deploy-status)](https://app.netlify.com/sites/m-conception/deploys)
 
 ## Documentation technique
 
@@ -25,3 +26,5 @@ Site vitrine de [M Conception](#TODO)
 
 - Lancer la commande suivante : `ng build`
 - Copier le contenu du dossier `dist/m_conception/browser` sur le serveur
+
+> Ceci représente les commandes manuelles, un push/merge sur main suffit pour déployer automatiquement sur Netlify
